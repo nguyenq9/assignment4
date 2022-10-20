@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <title>Assignment 4</title>
+</head>
+<body>
+    <div class="navbar" id="top">
+        <nav>
+            <button id="light">LIGHT💡</button>
+            <button id="dark">DARK🌙</button>
+        </nav>
+    </div>
+    <h1>LIGHT VS DARK</h1>
+    <p>***This is a recreation of an article: <a href="https://www.nngroup.com/articles/dark-mode/">https://www.nngroup.com/articles/dark-mode/</a>***</p>
+    <p>
+        <b>Contrast polarity</b> is a term used to describe the contrast between the text and the background:
+        <ul>
+            <li><b>Positive contrast polarity (light mode)</b> is dark colored font on a light colored background</li>
+            <li><b>Negative contrast polarity (dark mode)</b> is the combonation of light colored text on dark colored background</li>
+        </ul>
+    </p>
+    <p>
+        Because dark mode displays less light then the light-mode it might extend the life of your battery.
+    </p>
+
+    <h2 id="longhead">Long-Term Effects</h2>
+
+    <div id="long">
+        <p>
+            The literature reviewed so far looks at one-time effects of contrast polarity on human performance. But how about long-term effects? In other words, does long-term exposure to one type of contrast polarity have any effects?
+        </p>
+
+        <p>
+            An intriguing study published in Nature Research’s Scientific Reports in 2018 suggests that sustained exposure to light-mode may be associated with myopia. Myopia (or nearsightedness) refers to the inability to see far objects clearly and is strongly correlated with the level of education and with reading. In their study, Andrea Aleman and her colleagues at University of Tübingen in Germany asked 7 human participants to read text presented in dark mode and light mode for an hour each. To see if their predisposition to myopia changed after reading, they measured the thickness of the choroid, a vascular membrane behind the retina. The thinning of the choroid is associated with myopia. 
+        </p>
+
+        <p>
+            The researchers found significant thinning of this membrane when participants read text presented in light mode and significant thickening when reading text presented in dark mode. The thinning was more pronounced in participants who already had myopia.
+        </p>
+
+        <p>
+            This result seems to suggest that, even though performance in light mode may be better in the short term, there may be a long-term cost associated with it.
+        </p>
+    </div>
+
+    <h2 id="visionhead">Users with Impaired Vision</h2>
+
+    <div id="vision">
+        <p>
+            The literature on users with impaired vision, is paradoxically, less rich than the one on people with normal vision, although there is an implicit consensus that dark mode is better at least for some people with visual impairments.  Gordon Legge and his colleagues at University of Minnesota define two low-vision categories: (1) due to central-vision impairments and (2) due to cloudy ocular media.
+        </p>
+    
+        <p>
+            The ocular media refers to the various transparent substances in the eye, including the cornea and the lens. The most common cause of cloudy ocular media is cataract, which refers to the clouding of the lens and is fairly common in older people. A cataract scatters and blocks some of the light that is supposed to reach the retina through the lens and thus prevents the creation of a clear, focused image on your retina.
+        </p>
+    
+        <p>
+            Even as early as 1977, a study by Sloan reported that some people with low vision prefer dark mode. (In our own accessibility studies, Kara Pernice has also seen users with low vision sometimes switching between dark and light mode in an attempt to gain clarity.) In 1985, Gordon Legge and his colleagues at University of Minnesota hypothesized that this effect is due to “abnormal light scatter due cloudy ocular media” — presumably, because, if more light reaches the eye with a cloudy lens, there’s a bigger chance of a distortion. Thus, dark mode may be better for people with cloudy ocular media because the display emits less light.
+        </p>
+    
+        <p>
+            In Legge’s study, each of the 7 participants with cloudy ocular media had better reading rates with dark modes, whereas the rest of the participants, who had impaired central vision, were not affected by contrast polarity.
+        </p>
+    
+        <p>
+            Legge’s studies formed the basis of recommending the possibility of switching to dark mode for modern computer interfaces. In 2005, Papadopoulos and Goudiras, in an article that reviewed various accessibility best practices for low-vision users, recommended the availability of dark mode in user interfaces.
+        </p>
+    
+        <p>
+            A caveat noted by several of the researchers in the normal-vision field is that Legge’s studies with low-vision users were conducted with CRT displays, as opposed to the LEDs used in most modern displays. These displays were more susceptible to flicker in light mode than in dark mode, thus possibly biasing the results against the light mode. 
+        </p>
+    </div>
+    
+
+    <h2 id="takehead">Takeaways</h2>
+
+    <div id="takeaway">
+        <p>
+            So, should you jump on the dark-mode bandwagon?  While dark mode may present some advantages for some low-vision users — in particular, those with cloudy ocular media such as cataract, the research evidence points in the direction of an advantage of positive polarity for normal-vision users. In other words, in users with normal vision, light mode leads to better performance most of the time. 
+        </p>
+        
+        <p>
+            Why is light mode better for performance? These findings are best explained by the fact that, with positive contrast polarity, there is more overall light and so the pupil contracts more. As a result, there are fewer spherical aberrations, greater depth of field, and overall better ability to focus on details without tiring the eyes.
+        </p>
+    
+        <p>
+            Even though larger font sizes and bright ambient light may erase some of this advantage in people with normal vision, at this point we don’t recommend switching to dark mode by default if your target audience includes the general population.
+        </p>
+    
+        <p>
+            That being said, we strongly recommend that designers allow users to switch to dark mode if they want to — for three reasons: (1)  there may be long-term effects associated with light mode; (2) some people with visual impairments will do better with dark mode; and (3) some users simply like dark mode better. (We know that people rarely change defaults, but they should be able to.) It’s unlikely that people will alter the display mode for any random website, but, if a website or an application sees frequent use, it should consider providing this option to its users. In particular, applications meant for long-form reading (such as book readers, magazines, and even news sites) should offer a dark-mode feature. And the option should ideally be pervasive throughout all the screens of that website or application. Moreover, if an operating system provides a dark-mode API (like iOS does), make sure you take advantage of it — doing so will give those users who decide to switch to dark mode the ability to experience your application or website in their chosen contrast polarity.
+        </p>
+    </div>
+    <br>
+    <br>
+    <div id="reset">
+        <button id="openButton">Open All</button>
+        <button id="resetButton">Close All</button>
+    </div>
+    <br><br>
+
+</html>
